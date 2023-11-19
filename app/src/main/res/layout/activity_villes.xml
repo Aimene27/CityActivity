@@ -1,110 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Villes">
+    android:scrollbars="none"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".Villes">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="102dp"
+            android:layout_height="74dp"
+            android:src="@drawable/cityactivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
+            tools:layout_editor_absoluteY="0dp" />
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="102dp"
-        android:layout_height="74dp"
-        android:src="@drawable/cityactivity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteY="0dp" />
+        <ImageView
+            android:id="@+id/paris"
+            android:layout_width="wrap_content"
+            android:layout_height="166dp"
+            android:src="@drawable/paris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="ContentDescription,MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/paris"
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
-        android:src="@drawable/paris"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteY="75dp" />
+        <ImageView
+            android:id="@+id/lisbonne"
+            android:layout_width="wrap_content"
+            android:layout_height="163dp"
+            android:src="@drawable/lisbonne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paris"
+            tools:ignore="ContentDescription,MissingConstraints" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
-        android:src="@drawable/lisbonne"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="208dp" />
+        <ImageView
+            android:id="@+id/bruxelle"
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:src="@drawable/bruxelle"
+            app:layout_constraintTop_toBottomOf="@+id/lisbonne"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="-1dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
-        android:src="@drawable/bruxelle"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="341dp" />
+        <ImageView
+            android:id="@+id/barcelonne"
+            android:layout_width="wrap_content"
+            android:layout_height="163dp"
+            android:src="@drawable/barcelone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bruxelle"
+            tools:ignore="ContentDescription,MissingConstraints" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
-        android:src="@drawable/barcelone"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="473dp" />
+        <ImageView
+            android:id="@+id/amsterdam"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:src="@drawable/amsterdam"
+            app:layout_constraintTop_toBottomOf="@+id/barcelonne"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
-        android:src="@drawable/amsterdam"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="605dp" />
 
-    <TextView
-        android:layout_width="72dp"
-        android:layout_height="28dp"
-        android:text="Paris"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="109dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:layout_width="69dp"
-        android:layout_height="19dp"
-        android:background="@color/white"
-        android:text="15 Posts"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="bold"
+</ScrollView>
 
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="137dp" />
-
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="28dp"
-        android:text="Lisbonne"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="266dp" />
-
-    <TextView
-        android:layout_width="69dp"
-        android:layout_height="19dp"
-        android:background="@color/white"
-        android:text="15 Posts"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="bold"
-
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="294dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
 

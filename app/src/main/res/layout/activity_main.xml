@@ -12,7 +12,8 @@
         android:layout_height="160dp"
         app:srcCompat="@drawable/logocityactivity"
         tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="285dp" />
+        tools:layout_editor_absoluteY="285dp"
+        tools:ignore="MissingConstraints" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -20,6 +21,7 @@
         android:layout_width="191dp"
         android:layout_height="50dp"
         tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="556dp" />
+        tools:layout_editor_absoluteY="556dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
