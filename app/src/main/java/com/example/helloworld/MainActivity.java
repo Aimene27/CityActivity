@@ -11,16 +11,16 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView paris;
+    private ImageView Paris;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_villes);
 
-        this.paris = (ImageView) findViewById(R.id.paris);
+        this.Paris = (ImageView) findViewById(R.id.Paris);
 
-paris.setOnClickListener(new View.OnClickListener() {
+Paris.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
         Intent switchactivity = new Intent(getApplicationContext(), LesActivity.class);
