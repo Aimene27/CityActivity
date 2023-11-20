@@ -24,11 +24,11 @@
                     android:src="@drawable/cityactivity"
                     tools:ignore="ContentDescription,ImageContrastCheck" />
                 <FrameLayout
-                    android:id="@+id/Paris"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp">
                     <ImageView
+                        android:id="@+id/paris"
                         android:layout_width="wrap_content"
                         android:layout_height="156.5dp"
                         android:layout_marginTop="1dp"
@@ -43,7 +43,6 @@
                             android:id="@+id/parisText"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="50dp"
                             android:text="Paris"
@@ -55,22 +54,23 @@
                         <TextView
                             android:layout_width="65dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="35dp"
+                            android:layout_marginLeft="35dp"
                             android:background="@color/white"
                             android:text="15 Postes"
                             android:textColor="@color/black"
-                            tools:ignore="HardcodedText,TextSizeCheck" />
+                            tools:ignore="HardcodedText,TextSizeCheck"
+                             />
 
                     </LinearLayout>
 
 
                 </FrameLayout>
                 <FrameLayout
-                    android:id="@+id/Lisbonne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-1dp">
                     <ImageView
+                        android:id="@+id/Lisbonne"
                         android:layout_width="wrap_content"
                         android:layout_height="155dp"
                         android:layout_marginTop="1dp"
@@ -85,7 +85,7 @@
                             android:id="@+id/lisbonneText"
                             android:layout_width="75dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="300dp"
+                            android:layout_marginLeft="300dp"
                             android:layout_marginTop="50dp"
                             android:text="Lisbonne"
                             android:textColor="#ffffff"
@@ -96,22 +96,22 @@
                         <TextView
                             android:layout_width="65dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="315dp"
+                            android:layout_marginLeft="315dp"
                             android:background="@color/white"
                             android:text="15 Postes"
                             android:textColor="@color/black"
-                            tools:ignore="HardcodedText,TextSizeCheck" />
+                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck" />
 
                     </LinearLayout>
 
 
                 </FrameLayout>
                 <FrameLayout
-                    android:id="@+id/Bruxelle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-2dp">
                     <ImageView
+                        android:id="@+id/Bruxelles"
                         android:layout_width="wrap_content"
                         android:layout_height="154dp"
                         android:layout_marginTop="1dp"
@@ -129,7 +129,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="50dp"
-                            android:text="Bruxelle"
+                            android:text="Bruxelles"
                             android:textColor="#ffffff"
                             android:textSize="18sp"
                             android:textStyle="bold"
@@ -138,22 +138,22 @@
                         <TextView
                             android:layout_width="65dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="35dp"
+                            android:layout_marginLeft="35dp"
                             android:background="@color/white"
                             android:text="15 Postes"
                             android:textColor="@color/black"
-                            tools:ignore="HardcodedText,TextSizeCheck" />
+                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck" />
 
                     </LinearLayout>
 
 
                 </FrameLayout>
                 <FrameLayout
-                    android:id="@+id/Barcelonne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-2dp">
                     <ImageView
+                        android:id="@+id/Barcelonne"
                         android:layout_width="wrap_content"
                         android:layout_height="156.5dp"
                         android:layout_marginTop="1dp"
@@ -169,6 +169,7 @@
                             android:layout_width="95dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="295dp"
+                            android:layout_marginLeft="20dp"
                             android:layout_marginTop="50dp"
                             android:text="Barcelonne"
                             android:textColor="#ffffff"
@@ -190,12 +191,12 @@
 
                 </FrameLayout>
                 <FrameLayout
-                    android:id="@+id/Amsterdam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-1dp">
 
                     <ImageView
+                        android:id="@+id/Amsterdam"
                         android:layout_width="wrap_content"
                         android:layout_height="155dp"
                         android:layout_marginTop="1dp"
