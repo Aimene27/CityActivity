@@ -10,11 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
         <activity
+            android:name=".LesActivity"
+            android:exported="false" />
+        <activity
             android:name=".Villes"
             android:exported="false" />
-
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

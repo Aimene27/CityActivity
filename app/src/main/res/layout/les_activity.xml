@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/NoirTransparent"
+    tools:context=".LesActivity">
+
+
+    <ImageView
+        android:id="@+id/culture"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/culture"
+        app:layout_constraintTop_toBottomOf="@+id/texte"
+        android:layout_marginTop="10dp"
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <ImageView
+        android:id="@+id/restauration"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/restauration"
+        app:layout_constraintTop_toBottomOf="@+id/culture"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/loisirs"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/loisirs"
+        app:layout_constraintTop_toBottomOf="@+id/restauration"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/texte"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:fontFamily="@font/cinzel"
+        android:text="Que recherchez vous à (ville) ?"
+        android:textColor="@color/vert1"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+            <ImageView
+                android:id="@+id/retour_arriere"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/retour_arriere"
+                android:layout_marginLeft="10dp"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
+                android:layout_marginStart="10dp" />
+            <ImageView
+                android:id="@+id/accueil"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/pageaccueil"
+                android:layout_marginLeft="120dp"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
+                android:layout_marginStart="110dp" />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/favoris"
+                android:layout_marginLeft="95dp"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
+                android:layout_marginStart="105dp" />/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
