@@ -6,78 +6,241 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
-    tools:ignore="SpeakableTextPresentCheck"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp">
+    tools:ignore="SpeakableTextPresentCheck">
+        <androidx.constraintlayout.widget.ConstraintLayout
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Villes">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:context=".Villes">
+                <ImageView
+                    android:id="@+id/cityactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cityactivity"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+                    <ImageView
+                        android:id="@+id/Paris"
+                        android:layout_width="wrap_content"
+                        android:layout_height="156.5dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/paris"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="102dp"
-            android:layout_height="74dp"
-            android:src="@drawable/cityactivity"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
-            tools:layout_editor_absoluteY="0dp" />
+                        <TextView
+                            android:id="@+id/parisText"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Paris"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,TextSizeCheck" />
 
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:background="@color/white"
+                            android:text="15 Postes"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText,TextSizeCheck"
+                             />
 
-        <ImageView
-            android:id="@+id/paris"
-            android:layout_width="wrap_content"
-            android:layout_height="166dp"
-            android:src="@drawable/paris"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:ignore="ContentDescription,MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/lisbonne"
-            android:layout_width="wrap_content"
-            android:layout_height="163dp"
-            android:src="@drawable/lisbonne"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/paris"
-            tools:ignore="ContentDescription,MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/bruxelle"
-            android:layout_width="wrap_content"
-            android:layout_height="162dp"
-            android:src="@drawable/bruxelle"
-            app:layout_constraintTop_toBottomOf="@+id/lisbonne"
-            tools:ignore="ContentDescription,MissingConstraints"
-            tools:layout_editor_absoluteX="-1dp" />
-
-        <ImageView
-            android:id="@+id/barcelonne"
-            android:layout_width="wrap_content"
-            android:layout_height="163dp"
-            android:src="@drawable/barcelone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bruxelle"
-            tools:ignore="ContentDescription,MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/amsterdam"
-            android:layout_width="wrap_content"
-            android:layout_height="170dp"
-            android:src="@drawable/amsterdam"
-            app:layout_constraintTop_toBottomOf="@+id/barcelonne"
-            tools:ignore="ContentDescription,MissingConstraints"
-            tools:layout_editor_absoluteX="0dp" />
+                    </LinearLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp">
+                    <ImageView
+                        android:id="@+id/Lisbonne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="155dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/lisbonne"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
 
+                        <TextView
+                            android:id="@+id/lisbonneText"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Lisbonne"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="315dp"
+                            android:background="@color/white"
+                            android:text="15 Postes"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp">
+                    <ImageView
+                        android:id="@+id/Bruxelles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="154dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/bruxelle"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bruxelleText"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Bruxelles"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:background="@color/white"
+                            android:text="15 Postes"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp">
+                    <ImageView
+                        android:id="@+id/Barcelonne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="156.5dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/barcelone"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/barcelonneText"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="295dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Barcelonne"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="330dp"
+                            android:background="@color/white"
+                            android:text="15 Postes"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText,TextSizeCheck" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp">
+
+                    <ImageView
+                        android:id="@+id/Amsterdam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="155dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/amsterdam"
+                        tools:ignore="ContentDescription,ImageContrastCheck" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/AmsterdamText"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Amsterdam"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:background="@color/white"
+                            android:text="15 Postes"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText,TextSizeCheck" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
 
 

@@ -84,6 +84,7 @@
                 tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
 
             <ImageView
+                android:id="@+id/favoris"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="105dp"
@@ -94,12 +95,6 @@
 
 
         </LinearLayout>
-
-
-
-
-
-
 
     </androidx.cardview.widget.CardView>
 

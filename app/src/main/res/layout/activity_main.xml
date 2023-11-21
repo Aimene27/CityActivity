@@ -6,22 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        app:srcCompat="@drawable/logocityactivity"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="285dp"
-        tools:ignore="MissingConstraints" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="191dp"
-        android:layout_height="50dp"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="556dp"
-        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Page de chargement"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
