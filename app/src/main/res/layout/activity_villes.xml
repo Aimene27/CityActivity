@@ -49,7 +49,8 @@
                             android:textColor="#ffffff"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            tools:ignore="HardcodedText,TextSizeCheck" />
+                            tools:ignore="HardcodedText,TextSizeCheck"
+                            android:layout_marginStart="20dp" />
 
                         <TextView
                             android:layout_width="65dp"
@@ -59,7 +60,7 @@
                             android:text="15 Postes"
                             android:textColor="@color/black"
                             tools:ignore="HardcodedText,TextSizeCheck"
-                             />
+                            android:layout_marginStart="35dp" />
 
                     </LinearLayout>
 
@@ -68,12 +69,12 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-1dp">
+                    android:layout_marginTop="-10dp">
                     <ImageView
                         android:id="@+id/Lisbonne"
                         android:layout_width="wrap_content"
                         android:layout_height="155dp"
-                        android:layout_marginTop="1dp"
+                        android:layout_marginTop="-10dp"
                         android:src="@drawable/lisbonne"
                         tools:ignore="ContentDescription" />
                     <LinearLayout
@@ -86,22 +87,24 @@
                             android:id="@+id/lisbonneText"
                             android:layout_width="75dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="300dp"
+                            android:layout_marginLeft="265dp"
                             android:layout_marginTop="50dp"
                             android:text="Lisbonne"
                             android:textColor="#ffffff"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            tools:ignore="HardcodedText,TextSizeCheck" />
+                            tools:ignore="HardcodedText,TextSizeCheck"
+                            android:layout_marginStart="265dp" />
 
                         <TextView
                             android:layout_width="65dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="315dp"
+                            android:layout_marginLeft="280dp"
                             android:background="@color/white"
                             android:text="15 Postes"
                             android:textColor="@color/black"
-                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck" />
+                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck"
+                            android:layout_marginStart="280dp" />
 
                     </LinearLayout>
 
@@ -110,12 +113,12 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-2dp">
+                    android:layout_marginTop="-10dp">
                     <ImageView
                         android:id="@+id/Bruxelles"
                         android:layout_width="wrap_content"
                         android:layout_height="154dp"
-                        android:layout_marginTop="1dp"
+                        android:layout_marginTop="-10dp"
                         android:src="@drawable/bruxelle"
                         tools:ignore="ContentDescription" />
                     <LinearLayout
@@ -143,7 +146,8 @@
                             android:background="@color/white"
                             android:text="15 Postes"
                             android:textColor="@color/black"
-                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck" />
+                            tools:ignore="HardcodedText,RtlCompat,TextSizeCheck"
+                            android:layout_marginStart="35dp" />
 
                     </LinearLayout>
 
@@ -152,12 +156,12 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-2dp">
+                    android:layout_marginTop="-10dp">
                     <ImageView
                         android:id="@+id/Barcelonne"
                         android:layout_width="wrap_content"
                         android:layout_height="156.5dp"
-                        android:layout_marginTop="1dp"
+                        android:layout_marginTop="-10dp"
                         android:src="@drawable/barcelone"
                         tools:ignore="ContentDescription" />
                     <LinearLayout
@@ -169,7 +173,7 @@
                             android:id="@+id/barcelonneText"
                             android:layout_width="95dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="295dp"
+                            android:layout_marginStart="255dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="50dp"
                             android:text="Barcelonne"
@@ -181,7 +185,7 @@
                         <TextView
                             android:layout_width="65dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="330dp"
+                            android:layout_marginStart="278dp"
                             android:background="@color/white"
                             android:text="15 Postes"
                             android:textColor="@color/black"
@@ -194,13 +198,13 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-1dp">
+                    android:layout_marginTop="-10dp">
 
                     <ImageView
                         android:id="@+id/Amsterdam"
                         android:layout_width="wrap_content"
                         android:layout_height="155dp"
-                        android:layout_marginTop="1dp"
+                        android:layout_marginTop="-10dp"
                         android:src="@drawable/amsterdam"
                         tools:ignore="ContentDescription,ImageContrastCheck" />
                     <LinearLayout
