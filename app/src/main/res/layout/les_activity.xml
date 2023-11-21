@@ -7,6 +7,42 @@
     android:background="@color/NoirTransparent"
     tools:context=".LesActivity">
 
+    <LinearLayout
+        android:id="@+id/texte"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/texte1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/cinzel"
+            android:text="Que recherchez "
+            android:textColor="@color/vert1"
+            android:textSize="40sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/cinzel"
+            android:text="vous à (ville)?"
+            android:textColor="@color/vert1"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+
+
+
+
+    </LinearLayout>
+
 
     <ImageView
         android:id="@+id/culture"
@@ -14,9 +50,7 @@
         android:layout_height="100dp"
         android:src="@drawable/culture"
         app:layout_constraintTop_toBottomOf="@+id/texte"
-        android:layout_marginTop="10dp"
         tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
-        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="180dp" />
 
     <ImageView
@@ -39,18 +73,7 @@
         tools:ignore="ContentDescription,MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
 
-    <TextView
-        android:id="@+id/texte"
-        android:layout_width="350dp"
-        android:layout_height="130dp"
-        android:fontFamily="@font/cinzel"
-        android:text="Que recherchez vous à (ville) ?"
-        android:textColor="@color/vert1"
-        android:textSize="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
-        tools:layout_editor_absoluteY="16dp" />
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -58,36 +81,40 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
         tools:layout_editor_absoluteX="0dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             tools:ignore="ExtraText">
+
             <ImageView
                 android:id="@+id/retour_arriere"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/retour_arriere"
+                android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
-                android:layout_marginStart="10dp" />
+                android:src="@drawable/retour_arriere"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
+
             <ImageView
                 android:id="@+id/accueil"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
                 android:src="@drawable/pageaccueil"
-                android:layout_marginLeft="120dp"
-                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
-                android:layout_marginStart="110dp" />
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
+
             <ImageView
                 android:id="@+id/favoris"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="75dp"
                 android:src="@drawable/favoris"
-                android:layout_marginLeft="95dp"
-                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
-                android:layout_marginStart="105dp" />/>
-
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
+            />
 
 
         </LinearLayout>
