@@ -1,16 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Listactivity">
+    android:background="@color/NoirTransparent"
+    tools:context=".LesActivity">
 
-    <ListView
-        android:id="@+id/list_acticity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        ></ListView>
+    <LinearLayout
+        android:id="@+id/texte"
+        android:layout_width="408dp"
+        android:layout_height="668dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/texte1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cinzel"
+            android:text="nom du choix "
+            android:textColor="@color/vert1"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck"
+             />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cinzel"
+            android:text="activité"
+            android:textColor="@color/vert1"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <ListView
+            android:id="@+id/list_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="0dp"
+
+            ></ListView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/retour_arriere"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/retour_arriere"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
+
+            <ImageView
+                android:id="@+id/accueil"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/pageaccueil"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
+
+            <ImageView
+                android:id="@+id/favoris"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="75dp"
+                android:src="@drawable/favoris"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
+            />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
