@@ -9,7 +9,7 @@ public class constructeurlist {
 
     public constructeurlist(String nom, String desc, double prix){
         this.nom = nom;
-        this.prix = prix
+        this.prix = prix;
     }
 
     public String getNom() {return nom;}

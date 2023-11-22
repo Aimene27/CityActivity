@@ -8,13 +8,13 @@
     <ImageView
         android:id="@+id/image_activity"
         android:layout_width="145dp"
-        android:layout_height="60dp"
+        android:layout_height="86dp"
         android:src="@drawable/amsterdam" />
 
     <RelativeLayout
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="70dp"
+        android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/nom_activity"
@@ -24,19 +24,19 @@
 
         <TextView
             android:id="@+id/desc_activity"
-            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/nom_activity"
+            android:layout_marginTop="20dp"
             android:text="DESCRIPTION" />
 
         <TextView
             android:id="@+id/prix_activity"
-            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/nom_activity"
             android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/desc_activity"
             android:text="PRIX" />
 

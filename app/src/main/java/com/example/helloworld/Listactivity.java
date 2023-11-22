@@ -22,7 +22,7 @@ public class Listactivity extends AppCompatActivity {
         constructeurlistList.add(new constructeurlist("Melvin","lightskin",10));
 
         ListView listactivityview = findViewById(R.id.list_acticity);
-        list_activityview.set
+        listactivityview.setAdapter(new ListactivityAdapt(this,constructeurlistList));
 
     }
 }
