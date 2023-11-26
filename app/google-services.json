@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "862651573574",
+    "firebase_url": "https://restaurations-e4fa8-default-rtdb.firebaseio.com",
+    "project_id": "restaurations-e4fa8",
+    "storage_bucket": "restaurations-e4fa8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862651573574:android:a9cfb0cc52e46af6f4b147",
+        "android_client_info": {
+          "package_name": "com.example.helloworld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA0zwb-kPQcfeaMQFISpg1qNz6Q9NvBxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+    tools:ignore="UnusedAttribute">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Student Name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck"
+            />
+
+        <TextView
+            android:id="@+id/coursetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Course"
+            android:textSize="25dp"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextSizeCheck"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailtext"
+            android:text="Email"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/coursetext"
+            android:layout_marginLeft="10dp"
+            tools:ignore="HardcodedText,RtlHardcoded"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

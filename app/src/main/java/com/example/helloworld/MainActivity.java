@@ -1,34 +1,50 @@
 package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
+
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView Paris;
+    RecyclerView recyclerView;
+
+    MainAdapter mainAdapter;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_villes);
+        setContentView(R.layout.activity_main);
+        recyclerView =(RecyclerView) findViewById(R.id.rv);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        this.Paris = (ImageView) findViewById(R.id.Paris);
+        FirebaseRecyclerOptions<MainModel> options;
+        options = new FirebaseRecyclerOptions.Builder<MainModel>()
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("teachers"), MainModel.class)
+                .build();
 
-Paris.setOnClickListener(new View.OnClickListener() {
+        mainAdapter = new MainAdapter((options));
+        recyclerView.setAdapter(mainAdapter);
+
+
+
+    }
+
     @Override
-    public void onClick(View view) {
-        Intent switchactivity = new Intent(getApplicationContext(), LesActivity.class);
-        startActivity(switchactivity);
-        finish();
-    }
-});
+    protected void onStart() {
+        super.onStart();
+        mainAdapter.startListening();
     }
 
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mainAdapter.stopListening();
+    }
 }
