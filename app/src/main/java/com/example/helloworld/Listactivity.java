@@ -21,8 +21,7 @@ public class Listactivity extends AppCompatActivity {
         constructeurlistList.add(new constructeurlist("aimene","le parfumeur",500));
         constructeurlistList.add(new constructeurlist("Melvin","lightskin",10));
 
-        ListView listactivityview = findViewById(R.id.list_activity);
-        listactivityview.setAdapter(new ListactivityAdapt(this,constructeurlistList));
+
 
     }
 }
