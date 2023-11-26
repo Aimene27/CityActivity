@@ -4,44 +4,53 @@ public class MainModel {
     MainModel () {
 
     }
-    String name, course, email, surl;
+    String nom, desc, prix, adresse, image;
 
-    public MainModel(String name, String course, String email, String surl) {
-        this.name = name;
-        this.course = course;
-        this.email = email;
-        this.surl = surl;
+    public MainModel(String nom, String desc, String prix, String adresse, String image) {
+        this.nom = nom;
+        this.desc = desc;
+        this.prix = prix;
+        this.adresse = adresse;
+        this.image = image;
     }
 
-    public String getName() {
-        return name;
+    public String getNom(){
+        return nom;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
-    public String getCourse() {
-        return course;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
-    public String getEmail() {
-        return email;
+    public String getPrix() {
+        return prix;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPrix(String prix) {
+        this.prix = prix;
     }
 
-    public String getSurl() {
-        return surl;
+    public String getAdresse() {
+        return adresse;
     }
 
-    public void setSurl(String surl) {
-        this.surl = surl;
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

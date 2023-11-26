@@ -29,12 +29,13 @@ public class MainAdapter extends FirebaseRecyclerAdapter <MainModel,MainAdapter.
     @Override
     protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull MainModel model) {
 
-        holder.name.setText(model.getName());
-        holder.course.setText(model.getCourse());
-        holder.email.setText(model.getEmail());
+        holder.nom.setText(model.getNom());
+        holder.desc.setText(model.getDesc());
+        holder.prix.setText(model.getPrix());
+        holder.adresse.setText(model.getAdresse());
 
         Glide.with(holder.img.getContext())
-                .load(model.getSurl())
+                .load(model.getImage())
                 .placeholder((R.drawable.common_google_signin_btn_icon_dark))
                 .circleCrop()
                 .error(R.drawable.common_google_signin_btn_icon_dark_normal)
@@ -52,14 +53,15 @@ public class MainAdapter extends FirebaseRecyclerAdapter <MainModel,MainAdapter.
 
     class myViewHolder extends RecyclerView.ViewHolder{
         ImageView img;
-        TextView name,course, email;
+        TextView nom, desc, prix, adresse;
 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
             img = (ImageView)  itemView.findViewById(R.id.img1);
-            name = (TextView) itemView.findViewById(R.id.nametext);
-            course = (TextView) itemView.findViewById(R.id.coursetext);
-            email = (TextView) itemView.findViewById(R.id.emailtext);
+            nom = (TextView) itemView.findViewById(R.id.nomactivity);
+            desc = (TextView) itemView.findViewById(R.id.descactivity);
+            prix = (TextView) itemView.findViewById(R.id.prixactivity);
+            adresse = (TextView) itemView.findViewById(R.id.adresseactivity);
         }
     }
 }

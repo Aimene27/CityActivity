@@ -22,25 +22,25 @@
             tools:ignore="ContentDescription,ImageContrastCheck" />
 
         <TextView
-            android:id="@+id/nametext"
+            android:id="@+id/nomactivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
-            android:text="Student Name"
+            android:text="Nom"
             android:textSize="25sp"
             android:textStyle="bold"
             tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck"
             />
 
         <TextView
-            android:id="@+id/coursetext"
+            android:id="@+id/descactivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/nametext"
+            android:layout_below="@id/nomactivity"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
-            android:text="Course"
+            android:text="Description"
             android:textSize="25dp"
             tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextSizeCheck"
 
@@ -48,11 +48,24 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/emailtext"
-            android:text="Email"
+            android:id="@+id/prixactivity"
+            android:text="Prix"
             android:textSize="25sp"
             android:layout_toRightOf="@id/img1"
-            android:layout_below="@id/coursetext"
+            android:layout_below="@id/descactivity"
+            android:layout_marginLeft="10dp"
+            tools:ignore="HardcodedText,RtlHardcoded"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adresseactivity"
+            android:text="Adresse"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/prixactivity"
             android:layout_marginLeft="10dp"
             tools:ignore="HardcodedText,RtlHardcoded"
 
