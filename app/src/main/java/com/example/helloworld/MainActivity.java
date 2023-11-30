@@ -8,7 +8,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
@@ -19,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     MainAdapter mainAdapter;
 
-
+private ImageView accueil;
+private ImageView retour;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -37,6 +41,27 @@ public class MainActivity extends AppCompatActivity {
         mainAdapter = new MainAdapter((options));
         recyclerView.setAdapter(mainAdapter);
 
+        this.retour = (ImageView) findViewById(R.id.retour_arriere);
+        this.accueil = (ImageView) findViewById(R.id.accueil);
+
+
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent switchactivity = new Intent(getApplicationContext(), LesActivity.class);
+                startActivity(switchactivity);
+                finish();
+            }
+        });
+
+        accueil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent switchacitivity = new Intent(getApplicationContext(), LesActivity.class);
+                startActivity(switchacitivity);
+                finish();
+            }
+        });
 
 
     }
