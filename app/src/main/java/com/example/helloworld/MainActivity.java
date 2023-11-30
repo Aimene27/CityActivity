@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
 private ImageView accueil;
 private ImageView retour;
+private TextView ville;
+private TextView activity;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -43,6 +46,11 @@ private ImageView retour;
 
         this.retour = (ImageView) findViewById(R.id.retour_arriere);
         this.accueil = (ImageView) findViewById(R.id.accueil);
+        this.ville = (TextView) findViewById(R.id.texte2);
+        this.activity = (TextView) findViewById(R.id.texte1);
+
+        ville.setText(villeselect);
+        activity.setText(choixact);
 
 
         retour.setOnClickListener(new View.OnClickListener() {

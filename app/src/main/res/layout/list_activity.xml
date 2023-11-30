@@ -31,6 +31,7 @@
 
 
         <TextView
+            android:id="@+id/texte2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -43,8 +44,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="575dp" />
 
     </LinearLayout>
 
@@ -74,8 +74,7 @@
                 android:id="@+id/accueil"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="85dp"
-                android:layout_marginLeft="85dp"
+                android:layout_marginLeft="70dp"
                 android:src="@drawable/pageaccueil"
                 tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
 
@@ -83,8 +82,7 @@
                 android:id="@+id/favoris"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="75dp"
-                android:layout_marginLeft="75dp"
+                android:layout_marginLeft="70dp"
                 android:src="@drawable/favoris"
                 tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
             />
