@@ -35,7 +35,7 @@ private ImageView retour;
 
         FirebaseRecyclerOptions<MainModel> options;
         options = new FirebaseRecyclerOptions.Builder<MainModel>()
-                .setQuery(FirebaseDatabase.getInstance().getReference().child("villes").child(""+villeselect).child(""+choixact), MainModel.class)
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("villes").child(villeselect).child(choixact), MainModel.class)
                 .build();
 
         mainAdapter = new MainAdapter((options));
@@ -57,7 +57,7 @@ private ImageView retour;
         accueil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent switchacitivity = new Intent(getApplicationContext(), LesActivity.class);
+                Intent switchacitivity = new Intent(getApplicationContext(), Villes.class);
                 startActivity(switchacitivity);
                 finish();
             }

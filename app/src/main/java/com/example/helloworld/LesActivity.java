@@ -41,7 +41,7 @@ public class LesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent switchactivity = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(switchactivity);
-                choixact = "culture";
+                choixact = "Culture";
                 finish();
             }
         });
@@ -51,7 +51,7 @@ public class LesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent switchactivity = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(switchactivity);
-                choixact = "restaurant";
+                choixact = "Restaurant";
                 finish();
             }
         });
@@ -61,7 +61,7 @@ public class LesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent switchactivity = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(switchactivity);
-                choixact = "loisirs";
+                choixact = "Loisir";
                 finish();
             }
         });
