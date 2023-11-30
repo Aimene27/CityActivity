@@ -23,9 +23,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/cinzel"
-            android:text="nom du choix "
+            android:text="activité choisi"
             android:textColor="@color/vert1"
-            android:textSize="40sp"
+            android:textSize="30sp"
             tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck"
              />
 
@@ -35,9 +35,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/cinzel"
-            android:text="activité"
+            android:text="ville"
             android:textColor="@color/vert1"
-            android:textSize="40sp"
+            android:textSize="30sp"
             tools:ignore="HardcodedText,TextContrastCheck" />
 
         <androidx.recyclerview.widget.RecyclerView

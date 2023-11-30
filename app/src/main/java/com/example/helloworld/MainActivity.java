@@ -1,5 +1,8 @@
 package com.example.helloworld;
 
+import static com.example.helloworld.LesActivity.choixact;
+import static com.example.helloworld.Villes.villeselect;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     MainAdapter mainAdapter;
 
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseRecyclerOptions<MainModel> options;
         options = new FirebaseRecyclerOptions.Builder<MainModel>()
-                .setQuery(FirebaseDatabase.getInstance().getReference().child("villes").child("Paris").child("Restaurant"), MainModel.class)
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("villes").child(""+villeselect).child(""+choixact), MainModel.class)
                 .build();
 
         mainAdapter = new MainAdapter((options));

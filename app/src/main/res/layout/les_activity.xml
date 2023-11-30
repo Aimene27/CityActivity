@@ -15,30 +15,26 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/texte1"
-            android:layout_width="350dp"
-            android:layout_height="60dp"
+            android:id="@+id/titre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/cinzel"
             android:text="Que recherchez "
             android:textColor="@color/vert1"
-            android:textSize="40sp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
+            android:textSize="35sp"
+            android:layout_gravity="center"
             tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
 
         <TextView
+            android:id="@+id/titre2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
             android:fontFamily="@font/cinzel"
-            android:text="vous à (ville)?"
+            android:text="vous à ?"
             android:textColor="@color/vert1"
-            android:textSize="40sp"
+            android:textSize="35sp"
             tools:ignore="HardcodedText,TextContrastCheck" />
-
-
-
 
 
     </LinearLayout>
@@ -101,8 +97,7 @@
                 android:id="@+id/accueil"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="85dp"
-                android:layout_marginLeft="85dp"
+                android:layout_marginLeft="70dp"
                 android:src="@drawable/pageaccueil"
                 tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
 
@@ -110,8 +105,7 @@
                 android:id="@+id/favoris"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="75dp"
-                android:layout_marginLeft="75dp"
+                android:layout_marginLeft="70dp"
                 android:src="@drawable/favoris"
                 tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,VisualLintBounds" />
             />
